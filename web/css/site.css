@@ -1,84 +1,58 @@
-main > .container {
-    padding: 70px 15px 20px;
+@import "font.css";
+
+/* header */
+.header{
+    z-index: 1;
 }
 
-.footer {
-    background-color: #f5f5f5;
-    font-size: .9em;
-    height: 60px;
-}
-
-.footer > .container {
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.not-set {
-    color: #c55;
-    font-style: italic;
-}
-
-/* add sorting icons to gridview sort links */
-a.asc:after, a.desc:after {
-    content: '';
-    left: 3px;
+.header-logo .logo-part{
+    font-family: "Sf Pro Display Semi Bold";
+    font-size: 48px;
     display: inline-block;
-    width: 0;
-    height: 0;
-    border: solid 5px transparent;
-    margin: 4px 4px 2px 4px;
-    background: transparent;
+    vertical-align: middle;
+    line-height: normal;
 }
 
-a.asc:after {
-    border-bottom: solid 7px #212529;
-    border-top-width: 0;
+.header-logo .logo-part-1{
+    color: steelblue;
 }
 
-a.desc:after {
-    border-top: solid 7px #212529;
-    border-bottom-width: 0;
+.header-logo .logo-part-2{
+    color: crimson;
 }
 
-.grid-view th {
-    white-space: nowrap;
+.header-logo .logo{
+    height: 48px;
+    display: inline-block;
+    margin-right: 10px;
 }
 
-.hint-block {
+.vertical-wrapper.block-nav-category .block-title .text-title{
+    font-family: sans-serif;
+}
+/** header */
+
+/* banner-wrapper */
+.banner-wrapper.has_background img{
     display: block;
-    margin-top: 5px;
-    color: #999;
+    margin: 0 auto;
+    width: 100%;
 }
 
-.error-summary {
-    color: #a94442;
-    background: #fdf7f7;
-    border-left: 3px solid #eed3d7;
-    padding: 10px 20px;
-    margin: 0 0 15px 0;
+.banner-wrapper-inner.light h1,
+.banner-wrapper-inner.light .trail-item{
+    color: #ffffff;
 }
 
-/* align the logout "link" (button in form) of the navbar */
-.nav li > form > button.logout {
-    padding-top: 7px;
-    color: rgba(255, 255, 255, 0.5);
+.banner-wrapper-inner.light .trail-item.active{
+    color: silver;
 }
 
-@media(max-width:767px) {
-    .nav li > form > button.logout {
-        display:block;
-        text-align: left;
-        width: 100%;
-        padding: 10px 0;
-    }
+.banner-wrapper-inner.light .breadcrumbs .breadcrumb li a:not(:hover) {
+    color: #ffffff;
 }
 
-.nav > li > form > button.logout:focus,
-.nav > li > form > button.logout:hover {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.75);
+.banner-wrapper-inner.light  .breadcrumbs .breadcrumb li + li::before{
+    color: #f3f3f3;
 }
-
-.nav > li > form > button.logout:focus {
-    outline: none;
-}
+/** banner-wrapper */

@@ -1,14 +1,24 @@
 <?php
 
-/* @var $this yii\web\View */
+/* @var $this app\components\View */
 /* @var $form yii\bootstrap4\ActiveForm */
 /* @var $model app\models\LoginForm */
 
 use yii\bootstrap4\ActiveForm;
 use yii\bootstrap4\Html;
 
-$this->title = 'Login';
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = $this->app->t('Login');
+
+$this->params['breadcrumbs'] = [
+    [
+        'title' => 'Login', 
+        'heading' => $this->title,
+        'img' => ['src' => '@web/upload/breadcrumbs.jpg', 'class' => 'img-responsive attachment-1920x447 size-1920x447'], 
+        'theme' => 'light',
+        'url' => ['site/index'],
+    ],
+    ['title' => $this->title],
+];
 ?>
 <div class="site-login">
     <h1><?= Html::encode($this->title) ?></h1>
@@ -25,6 +35,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'errorOptions' => ['class' => 'col-lg-7 invalid-feedback'],
         ],
     ]); ?>
+    
+        <?= $form->errorSummary($model) ?>
 
         <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
 

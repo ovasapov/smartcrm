@@ -10,7 +10,7 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 
-class SiteController extends Controller
+class SiteController extends \app\components\Controller
 {
     /**
      * {@inheritdoc}
@@ -61,6 +61,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        $this->view->params['body']['class'] = "body-main";
         return $this->render('index');
     }
 
@@ -78,12 +79,11 @@ class SiteController extends Controller
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goBack();
+        } else {
+            return $this->render('login', [
+                'model' => $model,
+            ]);
         }
-
-        $model->password = '';
-        return $this->render('login', [
-            'model' => $model,
-        ]);
     }
 
     /**
@@ -124,5 +124,58 @@ class SiteController extends Controller
     public function actionAbout()
     {
         return $this->render('about');
+    }
+    
+    public function beforeAction( $action ) {
+        if ( parent::beforeAction ( $action ) ) {
+
+             //change layout for error action after 
+             //checking for the error action name 
+             //so that the layout is set for errors only
+            if ( $action->id == 'error' ) {
+                $this->view->params['main']['class'] = "main-container text-center error-404 not-found";
+            }
+            return true;
+        } 
+    }
+    
+    public function actionAccount()
+    {
+        return $this->render('account');
+    }
+    
+    public function actionAddresses()
+    {
+        return $this->render('addresses');
+    }
+    
+    public function actionDownloads()
+    {
+        return $this->render('downloads');
+    }
+    
+    public function actionOrders()
+    {
+        return $this->render('orders');
+    }
+    
+    public function actionDashboard()
+    {
+        return $this->render('dashboard');
+    }
+    
+    public function actionDirection()
+    {
+        return $this->render('direction');
+    }
+    
+    public function actionTracking()
+    {
+        return $this->render('tracking');
+    }
+    
+    public function actionShipping()
+    {
+        return $this->render('shipping');
     }
 }

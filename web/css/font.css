@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Sf Pro Display Regular';
+  font-style:normal;
+  font-weight:400;
+  src: url('fonts/sf-pro-display/SFPRODISPLAYREGULAR.otf'); /* IE9 Compat Modes */
+  src: url('fonts/sf-pro-display/SFPRODISPLAYREGULAR.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/sf-pro-display/SFPRODISPLAYREGULAR.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/sf-pro-display/SFPRODISPLAYREGULAR.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/sf-pro-display/SFPRODISPLAYREGULAR.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/sf-pro-display/SFPRODISPLAYREGULAR.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Sf Pro Display Medium';
+  font-style:normal;
+  font-weight:500;
+  src: url('fonts/sf-pro-display/SFPRODISPLAYMEDIUM.otf'); /* IE9 Compat Modes */
+  src: url('fonts/sf-pro-display/SFPRODISPLAYMEDIUM.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/sf-pro-display/SFPRODISPLAYMEDIUM.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/sf-pro-display/SFPRODISPLAYMEDIUM.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/sf-pro-display/SFPRODISPLAYMEDIUM.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/sf-pro-display/SFPRODISPLAYMEDIUM.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Sf Pro Display Semi Bold';
+  font-style:normal;
+  font-weight:600;
+  src: url('fonts/sf-pro-display/SFPRODISPLAYSEMIBOLD.otf'); /* IE9 Compat Modes */
+  src: url('fonts/sf-pro-display/SFPRODISPLAYSEMIBOLD.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/sf-pro-display/SFPRODISPLAYSEMIBOLD.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/sf-pro-display/SFPRODISPLAYSEMIBOLD.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/sf-pro-display/SFPRODISPLAYSEMIBOLD.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/sf-pro-display/SFPRODISPLAYSEMIBOLD.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Sf Pro Display Bold';
+  font-style:normal;
+  font-weight:700;
+  src: url('fonts/sf-pro-display/SFPRODISPLAYBOLD.otf'); /* IE9 Compat Modes */
+  src: url('fonts/sf-pro-display/SFPRODISPLAYBOLD.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/sf-pro-display/SFPRODISPLAYBOLD.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/sf-pro-display/SFPRODISPLAYBOLD.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/sf-pro-display/SFPRODISPLAYBOLD.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/sf-pro-display/SFPRODISPLAYBOLD.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
