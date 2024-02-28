@@ -77,14 +77,14 @@ $config = [
         'view'         => [
             'class' => 'app\components\View',
         ],
-        /*
+
         'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
+            'class' => 'app\components\UrlManager',
+            'scriptUrl' => '',
+            'scriptUrl' => 'index.php',
         ],
-        */
+        
+        'baseUrl' => 'asd',
     ],
     'params' => $params,
     'on beforeAction' => function ($event){

@@ -1,0 +1,54 @@
+{
+    "name": "yii-ui/yii2-flag-icon-css-asset-bundle",
+    "keywords": [
+        "yii2",
+        "yii-ui",
+        "extension",
+        "asset",
+        "asset-bundle",
+        "flag-icon-css",
+        "flags"
+    ],
+    "type": "yii2-extension",
+    "description": "Flag icon css asset bundle for Yii 2.",
+    "license": "MIT",
+    "homepage": "https://www.yii-ui.com/packages/yii2-flag-icon-css-asset-bundle",
+    "support": {
+        "issues": "https://gitlab.com/yii-ui/yii2-flag-icon-css-asset-bundle/issues",
+        "source": "https://gitlab.com/yii-ui/yii2-flag-icon-css-asset-bundle"
+    },
+    "authors": [
+        {
+            "name": "Christoph Möke",
+            "email": "christophmoeke@gmail.com",
+            "role": "Project Leader"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.1",
+        "yiisoft/yii2": "^2.0",
+        "components/flag-icon-css": "^3.3"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "yiiui\\yii2flagiconcss\\assets\\": "src"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
